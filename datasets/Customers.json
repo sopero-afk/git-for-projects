@@ -1,0 +1,209 @@
+{
+  "checklists": {
+    "checklists": []
+  },
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "alex"
+    },
+    "lastModifiedOn": 1498738956324,
+    "versionNumber": 0
+  },
+  "customFields": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "dkuProperties": [],
+  "flowOptions": {
+    "crossProjectBuildBehavior": "DEFAULT",
+    "rebuildBehavior": "NORMAL",
+    "virtualizable": false
+  },
+  "formatParams": {
+    "arrayMapFormat": "json",
+    "charset": "utf8",
+    "compress": "",
+    "dateSerializationFormat": "ISO",
+    "escapeChar": "\\",
+    "fileReadFailureBehavior": "FAIL",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "parseHeaderRow": true,
+    "probableNumberOfRecords": 6,
+    "quoteChar": "\"",
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "separator": ",",
+    "skipRowsAfterHeader": 0,
+    "skipRowsBeforeHeader": 0,
+    "style": "excel",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING"
+  },
+  "formatType": "csv",
+  "managed": false,
+  "metrics": {
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    },
+    "engineConfig": {
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "latestPartitionsN": 1,
+          "maxReadUncompressedBytes": -1,
+          "maxRecords": -1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "partitionSelectionMethod": "ALL",
+          "samplingMethod": "FULL",
+          "targetRatio": 0.02,
+          "useMemTable": false,
+          "withinFirstN": -1
+        }
+      },
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "impala": {
+        "active": true
+      },
+      "padRunsWithMetrics": false,
+      "python": {},
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "sql": {
+        "active": true
+      }
+    },
+    "probes": [
+      {
+        "computeOnBuildMode": "PARTITION",
+        "configuration": {},
+        "enabled": true,
+        "meta": {
+          "level": 0,
+          "name": "Basic data"
+        },
+        "type": "basic"
+      },
+      {
+        "computeOnBuildMode": "NO",
+        "configuration": {},
+        "enabled": true,
+        "meta": {
+          "level": 0,
+          "name": "Record count"
+        },
+        "type": "records"
+      }
+    ]
+  },
+  "metricsChecks": {
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    },
+    "monitor": false
+  },
+  "params": {
+    "filesSelectionRules": {
+      "excludeRules": [],
+      "explicitFiles": [],
+      "includeRules": [
+        {
+          "expr": "^/?customers.*$",
+          "matchingMode": "FULL_PATH",
+          "mode": "REGEXP"
+        }
+      ],
+      "mode": "RULES_INCLUDED_ONLY"
+    },
+    "folderSmartId": "xJZaEzKR",
+    "notReadyIfEmpty": false
+  },
+  "partitioning": {
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": [],
+    "ignoreNonMatchingFile": false
+  },
+  "readWriteOptions": {
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    },
+    "forceSingleOutputFile": false,
+    "preserveOrder": false,
+    "writeBuckets": 1
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "customerID",
+        "type": "string"
+      },
+      {
+        "name": "gender",
+        "type": "string"
+      },
+      {
+        "name": "birthdate",
+        "type": "string"
+      },
+      {
+        "name": "user_agent",
+        "type": "string"
+      },
+      {
+        "name": "ip_address",
+        "type": "string"
+      },
+      {
+        "name": "campaign",
+        "type": "string"
+      },
+      {
+        "name": "dataset",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "tags": [
+    "creator:alex"
+  ],
+  "type": "FilesInFolder",
+  "typeSystemVersion": "V1",
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "alex"
+    },
+    "lastModifiedOn": 1616702160585,
+    "versionNumber": 5
+  }
+}
